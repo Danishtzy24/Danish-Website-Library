@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #9b59b6, #2980b9); /* Purple and blue gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Scroll vertically for the whole body */
+}
+
+header {
+    background-color: #8e44ad; /* Purple shade */
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+h1 span {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.ai-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.ai-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: linear-gradient(to right, #f0f0f0, #dfe6e9); /* Light gray gradient */
+}
+
+.ai-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ai-profile {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ai-card:hover .ai-profile {
+    transform: scale(1.2); /* Enlarge image on hover */
+}
+
+.ai-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #8e44ad; /* Purple shade */
+    transition: color 0.3s;
+}
+
+.ai-info p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.ai-card:hover .ai-info h2 {
+    color: #2980b9; /* Blue shade */
+}
+
+.ai-card:hover .ai-info p {
+    color: #555;
+}
